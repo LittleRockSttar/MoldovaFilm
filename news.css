@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+:root {
+    --color-1: #273e47;
+    --color-2: #bd632f;
+    --color-3: #d8973c;
+    --color-4: #d8c99b;
+    --color-5: #a4243b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif; 
+   background-color: var(--color-4);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    background-color: var(--color-1);
+    width: 100%;
+    height: 80px;
+    color: var(--color-3);
+}
+
+
+.logo {
+    font-size: 31px;
+    font-weight: 900;
+}
+
+.header-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+}
+
+ a {
+    color: var(--color-3);
+    text-decoration: none;
+    
+}
+
+.btn-login button,
+.language button,
+#hamburger, button{
+    border: 2px solid var(--color-3);
+    background: none;
+    color: var(--color-3);
+    border-radius: 50px;
+    padding: 5px 8px;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    
+    background-color: #d8973c40;
+    transition-duration: 0.5s;
+}
+
+#hamburger{
+    display: none;
+}
+
+.language button {
+    border-radius: 100%;
+    padding: 6px 5px;
+    font-size: 12px;
+}
+
+#facebook {
+    background: none;
+    background-image: url('./images/facebook.png');
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    border: none;
+}
+
+#telegram {
+    background: none;
+    background-image: url('./images/telegram.png');
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    border: none;
+}
+
+#instagram {
+    background: none;
+    background-image: url('./images/instagram.png');
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    border: none;
+}
+
+nav .noutati-mod {
+    display: none;
+}
+
+#noutati.active + .noutati-mod {
+    display:block; 
+}
+
+.noutati-mod {
+    position:absolute;
+    background-color: var(--color-1);
+    width: auto;
+    height: auto;
+    right: 36%;
+    top: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.noutati-mod li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 40px;
+}
+
+.new {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.noutate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 3px solid var(--color-3);
+    background: none;
+    color: var(--color-3);
+    border-radius: 50px;
+    width: 30vw;
+    height: 60vh;
+    padding: 15px;
+}
+
+.noutate img {
+    border-radius: 30px;
+    width: 25vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.noutate h1 {
+    font-size:large;
+    color: var(--color-1);
+}
+
+.noutate p {
+    font-size: small;
+    color: var(--color-1);
+}
+
+footer {
+    background: var(--color-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    height: 30vh;
+} 
+
+form {
+    margin: 2% 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 50vw;
+    border: 3px solid var(--color-3);
+    background: none;
+    color: var(--color-3);
+    border-radius: 50px;
+   row-gap: 10px;
+}
+
+input,
+textarea {
+    width: 40vw;
+    padding: 10px 5px;
+    border: 3px solid var(--color-3);
+    border-radius: 10px;
+    background-color: #d8973c25;
+    border: none;
+    outline: none;
+    color: #273e47;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+::placeholder {
+    color:#273e474f;
+}
+
+.log,
+.links,
+.card {
+    color: var(--color-3);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#visa {
+    background: none;
+    background-image: url("https://cineplex.md/img/visa.png");
+    background-position: center;
+    background-size: cover;
+    width: 48px;
+    height: 30px;
+    border: none;
+    border-radius: 0;
+}
+
+#master {
+    background: none;
+    background-image: url("https://cineplex.md/img/mastercard.png");
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 31px;
+    border: none;
+}
+
+.new-about {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.new-image {
+
+}
+
+.new-data {
+
+}
+
+@media only screen and (max-width: 960px) {
+
+     nav {
+        display: none;
+     }
+
+     #hamburger{
+        display: block;
+    }
+    #hamburger.active + nav {
+        display:block; 
+        background-color: #a4243b;
+        position: absolute;
+        top: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    .new {
+        
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .noutate {
+        width: 40vw;
+    }
+     
+}
+
+  
