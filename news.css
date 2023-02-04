@@ -266,12 +266,20 @@ textarea {
     flex-direction: row;
 }
 
-.new-image {
-
+.new-image img{
+    margin: 30px;
+    width: 40vw;
+    height: 70vh;
+    object-fit: cover;
 }
 
-.new-data {
-
+.new-data  {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    color: var(--color-1);
 }
 
 @media only screen and (max-width: 960px) {
