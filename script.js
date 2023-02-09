@@ -10,11 +10,11 @@ noutati.addEventListener("mouseover", (event) => {
 
 
 
-const hamburger = document.getElementById("hamburger");
+// const hamburger = document.getElementById("hamburger");
 
-hamburger.addEventListener("mouseover", (event) => {
-    event.target.classList.toggle("active") 
-    setTimeout(() => {
-        event.target.classList.remove("active");
-      }, 2000); 
-    });
+// hamburger.addEventListener("mouseover", (event) => {
+//     event.target.classList.toggle("active") 
+//     setTimeout(() => {
+//         event.target.classList.remove("active");
+//       }, 4000); 
+//     });
