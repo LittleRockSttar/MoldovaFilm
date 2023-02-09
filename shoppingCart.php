@@ -2,16 +2,13 @@
 
 include 'conn.php';
 
-// if(!isset($_SESSION['id'])) {
-//     header("Location: idex.php");
-// }
+if(!isset($_SESSION['id'])) {
+    // pagina principala
+    header("Location: index.php");
+}
 
-// $id = $_SESSION['id'];
-$sql = "SELECT * FROM cart INNER JOIN film ON cart.film_id = film.id 
--- WHERE users_id = {id}
-";
-
-$delete = "DELETE FROM cart WHERE id = '{}'";
+$id = $_SESSION['id'];
+$sql = "SELECT * FROM cart INNER JOIN film ON cart.film_id = film.id WHERE users_id = {id}";
 
 $result = $connection -> query($sql);
 
